@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Владислав — frontend-розробник | Лендінги та веб-застосунки</title>
+  <meta name="description" content="Владислав — frontend-розробник. Створюю швидкі сучасні лендінги та веб-застосунки: дизайн, верстка, HTTPS, Google Search Console і базове SEO. Лендінг під ключ від $100.">
+  <meta name="theme-color" content="#0a0b10">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Open Graph. Після появи домену додайте og:url та абсолютний шлях до og:image -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:title" content="Владислав — frontend-розробник">
+  <meta property="og:description" content="Швидкі сучасні лендінги та веб-застосунки: від ідеї до публікації в Google. Лендінг під ключ від $100.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Тема ставиться до відмальовування сторінки, щоб не було миготіння -->
+  <script>
+    (function () {
+      var t = 'dark';
+      try {
+        t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      } catch (e) {}
+      document.documentElement.dataset.theme = t;
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Владислав",
+    "alternateName": "Vladyslav",
+    "jobTitle": "Frontend-розробник",
+    "email": "mailto:v.lizyuk@gmail.com",
+    "telephone": "+380957737324",
+    "sameAs": ["https://t.me/m3zur1k"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- SVG-спрайт іконок -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 5l-4 14"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.7l5.7 5.7a8 8 0 11-11.4 0z"/></symbol>
+    <symbol id="i-braces" viewBox="0 0 24 24"><path d="M8 3H7a2 2 0 00-2 2v5a2 2 0 01-2 2 2 2 0 012 2v5a2 2 0 002 2h1M16 21h1a2 2 0 002-2v-5a2 2 0 012-2 2 2 0 01-2-2V5a2 2 0 00-2-2h-1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16zM3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></symbol>
+    <symbol id="i-phone-ui" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main" data-i18n="skip">Перейти до вмісту</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#top" aria-label="Vladyslav — на початок">
+      <span class="logo__mark" aria-hidden="true">V</span>
+      <span class="logo__text">VLADYSLAV</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Головна навігація" data-i18n-attr="aria-label:nav.label">
+      <a href="#projects" data-i18n="nav.projects">Проєкти</a>
+      <a href="#services" data-i18n="nav.services">Послуги</a>
+      <a href="#pricing" data-i18n="nav.pricing">Вартість</a>
+      <a href="#about" data-i18n="nav.about">Про мене</a>
+      <a href="#contact" data-i18n="nav.contact">Контакти</a>
+    </nav>
+
+    <div class="header__actions">
+      <!-- Перемикач мов з'являється автоматично, коли підключено словники (js/lang/*.js) -->
+      <div class="lang" id="lang" hidden></div>
+
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Змінити тему" data-i18n-attr="aria-label:theme.toggle">
+        <svg class="ico ico--sun"><use href="#i-sun"/></svg>
+        <svg class="ico ico--moon"><use href="#i-moon"/></svg>
+      </button>
+
+      <a class="btn btn-primary btn-sm header__cta" href="https://t.me/m3zur1k" target="_blank" rel="noopener">
+        <span data-i18n="nav.cta">Написати</span>
+      </a>
+
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav" data-i18n-attr="aria-label:nav.menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow reveal" data-i18n="hero.eyebrow">Frontend-розробник · Веб-дизайн</p>
+        <h1 class="hero__title reveal" data-i18n="hero.title">Створюю швидкі сайти, що <span class="grad">приводять клієнтів</span></h1>
+        <p class="hero__lead reveal" data-i18n="hero.lead">Лендінги та веб-застосунки від ідеї до публікації в Google: дизайн, розробка, HTTPS і базове SEO — усе в одних руках.</p>
+
+        <div class="hero__cta reveal">
+          <a class="btn btn-primary" href="https://t.me/m3zur1k" target="_blank" rel="noopener">
+            <svg class="ico"><use href="#i-telegram"/></svg>
+            <span data-i18n="hero.cta1">Написати в Telegram</span>
+          </a>
+          <a class="btn btn-ghost" href="tel:+380957737324">
+            <svg class="ico"><use href="#i-phone"/></svg>
+            <span data-i18n="hero.cta2">Зателефонувати</span>
+          </a>
+        </div>
+
+        <ul class="stats reveal">
+          <li><strong>2</strong><span data-i18n="stats.projects">запущені проєкти</span></li>
+          <li><strong>3–5</strong><span data-i18n="stats.days">днів на лендінг</span></li>
+          <li><strong data-i18n="stats.price.value">від $100</strong><span data-i18n="stats.price">лендінг під ключ</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="wire">
+          <div class="wire__bar"><i></i><i></i><i></i></div>
+          <div class="wire__body">
+            <div class="wire__nav"><b></b><span></span><span></span><span></span></div>
+            <div class="wire__hero">
+              <div class="wire__text">
+                <span class="l l1"></span><span class="l l2"></span><span class="l l3"></span>
+                <span class="pill"></span>
+              </div>
+              <div class="wire__art"><span></span></div>
+            </div>
+            <div class="wire__cards"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="chip chip--a"><svg class="ico"><use href="#i-check"/></svg>HTTPS</div>
+        <div class="chip chip--b"><svg class="ico"><use href="#i-zap"/></svg>Mobile-first</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow" data-i18n="projects.eyebrow">Портфоліо</p>
+        <h2 data-i18n="projects.title">Обрані роботи</h2>
+        <p class="section__lead" data-i18n="projects.lead">Два проєкти, до яких я підійшов як до власних: від структури та дизайну до запуску.</p>
+      </header>
+
+      <div class="projects">
+
+        <!-- Проєкт 1 -->
+        <article class="project reveal">
+          <a class="project__media" href="https://flagmanmotor.com.ua/" target="_blank" rel="noopener" aria-label="Відкрити сайт СТО" data-i18n-attr="aria-label:p1.open">
+            <div class="browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span>flagmanmotor.com.ua</span></div>
+              <img src="assets/img/project-flagman.jpg" width="1200" height="600" loading="lazy" decoding="async"
+                   alt="Головний екран сайту автосервісу: темний дизайн із червоним акцентом" data-i18n-attr="alt:p1.alt">
+            </div>
+          </a>
+          <div class="project__body">
+            <p class="project__kind" data-i18n="p1.kind">Сайт автосервісу</p>
+            <h3 data-i18n="p1.title">СТО для легкових і вантажних авто</h3>
+            <dl class="case">
+              <div><dt data-i18n="case.task">Завдання</dt><dd data-i18n="p1.task">Показати весь спектр послуг — легкові й вантажні авто, кузовний ремонт, фарбування, запчастини — і швидко привести відвідувача до заявки.</dd></div>
+              <div><dt data-i18n="case.solution">Рішення</dt><dd data-i18n="p1.solution">Строгий темний дизайн із чітким акцентом, шість карток послуг, блок «Впізнаєте свою ситуацію?» з типовими проблемами клієнтів і кнопки дзвінка та Telegram, що завжди під рукою.</dd></div>
+              <div><dt data-i18n="case.result">Результат</dt><dd data-i18n="p1.result">Швидкий сайт, оптимізований під телефони: клієнт може зателефонувати, написати або залишити заявку за кілька дотиків.</dd></div>
+            </dl>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li data-i18n="tag.design">Дизайн</li><li data-i18n="tag.mobile">Мобільна версія</li></ul>
+            <a class="link-arrow" href="https://flagmanmotor.com.ua/" target="_blank" rel="noopener">
+              <span data-i18n="project.open">Відкрити сайт</span><svg class="ico"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Проєкт 2 -->
+        <article class="project project--flip reveal">
+          <a class="project__media" href="https://autoworkshop.com.ua/" target="_blank" rel="noopener" aria-label="Відкрити сайт автодіагностики" data-i18n-attr="aria-label:p2.open">
+            <div class="browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span>autoworkshop.com.ua</span></div>
+              <img src="assets/img/project-autoworkshop.jpg" width="1200" height="590" loading="lazy" decoding="async"
+                   alt="Головний екран сайту автодіагностики: анімований осцилограф і зелений акцент" data-i18n-attr="alt:p2.alt">
+            </div>
+          </a>
+          <div class="project__body">
+            <p class="project__kind" data-i18n="p2.kind">Сайт майстерні автодіагностики</p>
+            <h3 data-i18n="p2.title">Комп'ютерна діагностика авто</h3>
+            <dl class="case">
+              <div><dt data-i18n="case.task">Завдання</dt><dd data-i18n="p2.task">Пояснити складну послугу — комп'ютерну діагностику — простою мовою та знизити бар'єр для першого звернення.</dd></div>
+              <div><dt data-i18n="case.solution">Рішення</dt><dd data-i18n="p2.solution">Інтерактивний підбір за симптомом, 11 напрямків діагностики в розгортних картках, анімований «осцилограф» у першому екрані, індикатор «майстерня зараз працює» та блок частих питань.</dd></div>
+              <div><dt data-i18n="case.result">Результат</dt><dd data-i18n="p2.result">Зрозумілий шлях «симптом → перевірка → запис» замість сухого списку послуг.</dd></div>
+            </dl>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li data-i18n="tag.interactive">Інтерактив</li><li data-i18n="tag.mobile">Мобільна версія</li></ul>
+            <a class="link-arrow" href="https://autoworkshop.com.ua/" target="_blank" rel="noopener">
+              <span data-i18n="project.open">Відкрити сайт</span><svg class="ico"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow" data-i18n="services.eyebrow">Послуги</p>
+        <h2 data-i18n="services.title">Чим можу допомогти</h2>
+        <p class="section__lead" data-i18n="services.lead">Проведу проєкт від початку до публікації в Google — без посередників.</p>
+      </header>
+
+      <ul class="cards">
+        <li class="card reveal">
+          <span class="orb"><svg class="ico"><use href="#i-layout"/></svg></span>
+          <h3 data-i18n="s1.title">Лендінги</h3>
+          <p data-i18n="s1.text">Односторінкові сайти, що чітко пояснюють пропозицію та ведуть до заявки.</p>
+        </li>
+        <li class="card reveal">
+          <span class="orb"><svg class="ico"><use href="#i-code"/></svg></span>
+          <h3 data-i18n="s2.title">Верстка за макетом</h3>
+          <p data-i18n="s2.text">Точно перетворю ваш дизайн на чистий, швидкий і адаптивний код.</p>
+        </li>
+        <li class="card reveal">
+          <span class="orb"><svg class="ico"><use href="#i-pen"/></svg></span>
+          <h3 data-i18n="s3.title">Дизайн сайту</h3>
+          <p data-i18n="s3.text">Якщо макета немає — запропоную власний сучасний та зручний дизайн.</p>
+        </li>
+        <li class="card reveal">
+          <span class="orb"><svg class="ico"><use href="#i-zap"/></svg></span>
+          <h3 data-i18n="s4.title">Доробка й оптимізація</h3>
+          <p data-i18n="s4.text">Пришвидшу існуючий сайт, виправлю помилки та покращу мобільну версію.</p>
+        </li>
+        <li class="card reveal">
+          <span class="orb"><svg class="ico"><use href="#i-layers"/></svg></span>
+          <h3 data-i18n="s5.title">Веб-застосунки</h3>
+          <p data-i18n="s5.text">Інтерфейси та застосунки на JavaScript, TypeScript і Next.js.</p>
+        </li>
+        <li class="card reveal">
+          <span class="orb"><svg class="ico"><use href="#i-globe"/></svg></span>
+          <h3 data-i18n="s6.title">Запуск і SEO</h3>
+          <p data-i18n="s6.text">Підключу HTTPS і Google Search Console та виконаю базове SEO-налаштування.</p>
+        </li>
+      </ul>
+
+      <div class="stack reveal">
+        <p class="stack__label" data-i18n="stack.label">Технології, з якими працюю</p>
+        <ul class="stack__list">
+          <li><span class="orb orb--sm"><svg class="ico"><use href="#i-code"/></svg></span>HTML</li>
+          <li><span class="orb orb--sm"><svg class="ico"><use href="#i-drop"/></svg></span>CSS</li>
+          <li><span class="orb orb--sm"><svg class="ico"><use href="#i-braces"/></svg></span>JavaScript</li>
+          <li><span class="orb orb--sm"><svg class="ico"><use href="#i-shield"/></svg></span>TypeScript</li>
+          <li><span class="orb orb--sm"><svg class="ico"><use href="#i-terminal"/></svg></span>Python</li>
+          <li><span class="orb orb--sm"><svg class="ico"><use href="#i-box"/></svg></span>Next.js</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow" data-i18n="pricing.eyebrow">Вартість</p>
+        <h2 data-i18n="pricing.title">Прозорі умови</h2>
+        <p class="section__lead" data-i18n="pricing.lead">Фіксована ціна на лендінг, а складніші проєкти обговорюємо особисто.</p>
+      </header>
+
+      <div class="pricing">
+        <div class="plan plan--main reveal">
+          <div class="plan__top">
+            <p class="plan__name" data-i18n="plan1.name">Лендінг під ключ</p>
+            <p class="plan__price"><span data-i18n="plan.from">від</span> <strong>$100</strong></p>
+            <p class="plan__time"><svg class="ico"><use href="#i-clock"/></svg><span data-i18n="plan1.time">3–5 днів</span></p>
+          </div>
+          <ul class="checks">
+            <li data-i18n="plan1.i1">Дизайн та адаптивна верстка з нуля</li>
+            <li data-i18n="plan1.i2">Оптимізація під мобільні пристрої</li>
+            <li data-i18n="plan1.i3">Підключення HTTPS</li>
+            <li data-i18n="plan1.i4">Google Search Console та базове SEO</li>
+            <li data-i18n="plan1.i5">Публікація сайту та індексація в Google</li>
+            <li data-i18n="plan1.i6">Хостинг на ваш вибір — рекомендую GitHub Pages (безкоштовно)</li>
+          </ul>
+          <p class="plan__note" data-i18n="plan1.note">Без серверної частини (бекенду).</p>
+          <a class="btn btn-primary" href="https://t.me/m3zur1k" target="_blank" rel="noopener">
+            <svg class="ico"><use href="#i-telegram"/></svg><span data-i18n="plan1.cta">Замовити лендінг</span>
+          </a>
+        </div>
+
+        <div class="plan reveal">
+          <div class="plan__top">
+            <p class="plan__name" data-i18n="plan2.name">Складніші проєкти</p>
+            <p class="plan__price plan__price--text" data-i18n="plan2.price">Індивідуально</p>
+          </div>
+          <p class="plan__text" data-i18n="plan2.text">Веб-застосунки, доробка та оптимізація існуючих сайтів, проєкти з бекендом. Вартість і терміни залежать від обсягу та побажань — обговорюємо особисто після короткого брифу.</p>
+          <a class="btn btn-ghost" href="#contact">
+            <span data-i18n="plan2.cta">Обговорити проєкт</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section--alt" id="about">
+    <div class="container about">
+      <div class="about__text reveal">
+        <p class="eyebrow" data-i18n="about.eyebrow">Про мене</p>
+        <h2 data-i18n="about.title">Один виконавець — цілісний результат</h2>
+        <p data-i18n="about.p1">Я Владислав — frontend-розробник, який працює самостійно й веде проєкт від першої ідеї до публікації в Google. Дизайн, верстку та запуск роблю сам, тому ви спілкуєтесь з однією людиною й отримуєте цілісний результат.</p>
+        <p data-i18n="about.p2">Про досвід для мене говорять проєкти, а не роки в резюме: кожен сайт доводжу до рівня, який не соромно показати. Працюю з HTML, CSS, JavaScript, TypeScript, Python та Next.js, дистанційно — по всій Україні та за її межами.</p>
+        <a class="link-quiet" href="assets/Vladyslav-CV.pdf" target="_blank" rel="noopener" download>
+          <svg class="ico"><use href="#i-download"/></svg><span data-i18n="about.cv">Резюме (PDF)</span>
+        </a>
+      </div>
+
+      <ul class="values">
+        <li class="value reveal">
+          <span class="orb orb--sm"><svg class="ico"><use href="#i-zap"/></svg></span>
+          <div><h3 data-i18n="v1.title">Швидкість</h3><p data-i18n="v1.text">Легкий код без зайвого — сайт швидко відкривається навіть на слабкому інтернеті.</p></div>
+        </li>
+        <li class="value reveal">
+          <span class="orb orb--sm"><svg class="ico"><use href="#i-pen"/></svg></span>
+          <div><h3 data-i18n="v2.title">Дизайн</h3><p data-i18n="v2.text">Чистий стриманий стиль, який підкреслює вашу пропозицію, а не відволікає.</p></div>
+        </li>
+        <li class="value reveal">
+          <span class="orb orb--sm"><svg class="ico"><use href="#i-phone-ui"/></svg></span>
+          <div><h3 data-i18n="v3.title">Ергономічність</h3><p data-i18n="v3.text">Продумана навігація та mobile-first підхід: зручно з телефону і з комп'ютера.</p></div>
+        </li>
+        <li class="value reveal">
+          <span class="orb orb--sm"><svg class="ico"><use href="#i-star"/></svg></span>
+          <div><h3 data-i18n="v4.title">Сучасність</h3><p data-i18n="v4.text">Актуальні технології та плавні, ненав'язливі анімації.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <header class="section__head section__head--center reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Контакти</p>
+        <h2 data-i18n="contact.title">Обговоримо ваш проєкт?</h2>
+        <p class="section__lead" data-i18n="contact.lead">Напишіть у Telegram, зателефонуйте або надішліть лист — обговоримо задачу й підберемо рішення.</p>
+      </header>
+
+      <ul class="contact__grid">
+        <li class="reveal">
+          <a class="contact-card" href="https://t.me/m3zur1k" target="_blank" rel="noopener">
+            <span class="orb"><svg class="ico"><use href="#i-telegram"/></svg></span>
+            <span class="contact-card__label">Telegram</span>
+            <span class="contact-card__value">@m3zur1k</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a class="contact-card" href="tel:+380957737324">
+            <span class="orb"><svg class="ico"><use href="#i-phone"/></svg></span>
+            <span class="contact-card__label" data-i18n="contact.phone">Телефон</span>
+            <span class="contact-card__value">+380 95 773 73 24</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a class="contact-card" href="mailto:v.lizyuk@gmail.com">
+            <span class="orb"><svg class="ico"><use href="#i-mail"/></svg></span>
+            <span class="contact-card__label">E-mail</span>
+            <span class="contact-card__value">v.lizyuk@gmail.com</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© <span id="year">2026</span> Vladyslav · <span data-i18n="footer.remote">Працюю дистанційно</span></p>
+    <a class="to-top" href="#top" aria-label="Нагору" data-i18n-attr="aria-label:footer.top"><svg class="ico"><use href="#i-up"/></svg></a>
+  </div>
+</footer>
+
+<!-- Додаткові мови: підключайте файли js/lang/ru.js та js/lang/en.js ПЕРЕД i18n.js -->
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
